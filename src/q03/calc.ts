@@ -9,19 +9,19 @@ if(!operator || isNaN(num1) || isNaN(num2)){
 
 switch (operator) {
     case "add":
-        console.log(num1+num2);
+        console.log(String(num1+num2));
         break;
     case "sub":
-        console.log(num1-num2);
+        console.log(String(num1-num2));
         break
     case "mul":
-        console.log(num1*num2);
+        console.log(String(num1*num2));
         break
     case "div":
         if(num2 === 0){
             console.log("Infinity");
         }
-        console.log(num1/num2);
+        console.log(String(num1/num2));
         break
     default:
         console.log("Invalid operator");
