@@ -12,10 +12,10 @@ for(let i = 1; i<=myNum;i++){
         result+=`FooBar\n`;
         continue
     }else if(i%3 == 0){
-        result+="Foo";
+        result+="Foo\n";
         continue
     }else if(i%7 == 0){
-        result+="Bar";
+        result+="Bar\n";
         continue
     }
     result+=`${i}\n`;
