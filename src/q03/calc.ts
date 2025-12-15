@@ -18,9 +18,12 @@ switch (operator) {
         console.log(num1*num2);
         break
     case "div":
+        if(num2 === 0){
+            console.log("Infinity");
+        }
         console.log(num1/num2);
         break
     default:
-        console.log("Invalid input");
+        console.log("Invalid operator");
         break;
 }
