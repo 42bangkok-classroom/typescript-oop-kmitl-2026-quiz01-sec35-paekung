@@ -11,4 +11,4 @@ for(let i = 0;i<=myNum;i++){
     sum+=i;
 }
 
-console.log(sum);
+console.log(`Sum: ${sum}`);
