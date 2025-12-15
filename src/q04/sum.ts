@@ -1,6 +1,6 @@
-const myNum : number = parseInt(process.argv[2]);
+const myNum : number = Number(process.argv[2]);
 
-if(!myNum || myNum<=0){
+if(!myNum || myNum<=0 || (process.argv[2]).includes(".")){
     console.log("Invalid Input");
     process.exit();
 }
