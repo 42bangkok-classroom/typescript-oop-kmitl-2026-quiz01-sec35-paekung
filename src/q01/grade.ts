@@ -1,21 +1,28 @@
-const myGradeInput : number = Number(process.argv[2]);
+const myGradeInput = process.argv[2];
 
-if(isNaN(myGradeInput)){
+if(myGradeInput === ""){
+    console.log("Invalid Input");
+    process.exit();
+}
+
+let myGrade = Number(myGradeInput);
+
+if(isNaN(myGrade)){
     console.log("Invalid Input");
 }
-else if (myGradeInput>100 || myGradeInput<0){
+else if (myGrade>100 || myGrade<0){
     console.log("Invalid Input")
 } else {
-    if(myGradeInput>=80){
+    if(myGrade>=80){
         console.log("Grade is A")
     }
-    else if(myGradeInput>=70){
+    else if(myGrade>=70){
         console.log("Grade is B")
     }
-    else if(myGradeInput>=60){
+    else if(myGrade>=60){
         console.log("Grade is C")
     }
-    else if(myGradeInput>=50){
+    else if(myGrade>=50){
         console.log("Grade is D")
     }
     else{
