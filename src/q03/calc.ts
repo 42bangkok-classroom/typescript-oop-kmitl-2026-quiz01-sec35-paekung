@@ -2,20 +2,23 @@ const operator : string = process.argv[2];
 const num1 : number = Number(process.argv[3]);
 const num2 : number = Number(process.argv[4]);
 
-if(!operator || !num1 || !num2 || isNaN(num1) || isNaN(num2)){
+if(!operator || isNaN(num1) || isNaN(num2)){
     console.log("Invalid input");
     process.exit();
 }
 
 switch (operator) {
     case "add":
-        
+        console.log(num1+num2);
         break;
     case "sub":
+        console.log(num1-num2);
         break
     case "mul":
+        console.log(num1*num2);
         break
     case "div":
+        console.log(num1/num2);
         break
     default:
         console.log("Invalid input");
