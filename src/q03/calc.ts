@@ -18,9 +18,9 @@ switch (operator) {
         console.log(String(num1*num2));
         break
     case "div":
-        if(num2 === 0){
-            console.log("Infinity");
-        }
+        // if(num2 === 0){
+        //     console.log("Infinity");
+        // }
         console.log(String(num1/num2));
         break
     default:
