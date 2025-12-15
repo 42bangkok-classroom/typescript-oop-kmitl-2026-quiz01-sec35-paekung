@@ -2,6 +2,11 @@ const operator : string = process.argv[2];
 const num1 : number = parseInt(process.argv[3]);
 const num2 : number = parseInt(process.argv[4]);
 
+if(operator === ""){
+    console.log("Invalid operator");
+    process.exit();
+}
+
 if(!operator || isNaN(num1) || isNaN(num2)){
     console.log("Invalid input");
     process.exit();
