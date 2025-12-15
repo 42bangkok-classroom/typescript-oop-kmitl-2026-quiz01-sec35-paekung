@@ -1,6 +1,11 @@
 const Balance : number = Number(process.argv[2]);
 const Withdrawal : number = Number(process.argv[3]);
 
+if(process.argv[2] == "" || process.argv[3] == ""){
+    console.log("Invalid input");
+    process.exit();
+}
+
 if(isNaN(Balance) || isNaN(Withdrawal)){
     console.log("Invalid Input")
     process.exit();
