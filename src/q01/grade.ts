@@ -1,6 +1,6 @@
 const myGradeInput : number = Number(process.argv[2]);
 
-if(!myGradeInput || isNaN(myGradeInput)){
+if(isNaN(myGradeInput)){
     console.log("Invalid Input");
 }
 else if (myGradeInput>100 || myGradeInput<0){
